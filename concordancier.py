@@ -5,7 +5,6 @@
 choisie au préalable (anglais ou japonais). L'intérêt d'un concordancier étant qu'il renvoie
 également une phrase avec le mot recherché en contexte à partir d'un texte."""
 
-"""Doit créer un outil pour le traitement du texte (division en phrase), et un outil pour """
 
 import pandas as pd
 import string
@@ -13,38 +12,40 @@ import string
 # Permet de choisir la langue cible (langue dans laquelle on veut obtenir une traduction)
 print('Choisissez une langue (anglais/japonais)')
 target_language = input()
+print('Entrez un mot')
+source_word = input()
+
+
+def word_mapping(f):
+        """Fonction qui permet de renvoyer la traduction et son contexte pour l'anglais"""
+        """Doit d'abord rechercher le mot (langue source) dans le fichier terminologie, ensuite
+        rechercher le mot (langue cible dans le fichier texte)"""
 if target_language == 'anglais':
-    # Permet d'entrer un mot à chercher
-    print('Entrez un mot')
-    source_word = input()
-    def wordtranslation_english: #si pas possible de mettre une fonction dans une boucle if, mettre output dans une variable et renvoyer résultat
+    filename = 'terminologie.txt'
+    f = open(filename, 'r', encoding='utf-8')
+    table = pd.Series()
+    for source_word in items:
+        if str(it) in table.index:
+            table[str(source_word)] += 1
+        else:
+            table[str(source_word)] = 1
+    return table.sort_values(ascending=False)
+
+    for line in f:
+        if source_word in line:
+            print(line, end='')
+
+def word_translation():
+
+
 if target_language == 'japonais':
-    print('Entrez un mot')
-    source_word = input()
-    def wordtranslation_japanese:
 
-
-
-def wordtranslation_english():
-    """Fonction qui permet de renvoyer la traduction et son contexte pour l'anglais"""
-    """Doit d'abord rechercher le mot (langue source) dans le fichier terminologie, ensuite
-    rechercher le mot (langue cible dans le fichier texte)"""
-filename = 'terminologie.txt'
-f = open(filename, 'r', encoding='utf-8')
-for line in f:
-    if source_word in line:
-        print(line, end='') """Doit renvoyer tableau avec traduction et une ligne du texte """
-
-
-def wordtranslation_japanese():
-    """Fonction qui permet de renvoyer la traduction et son contexte pour le japonais"""
 
 
 #corps du programme
 if __name__ == '__main__':
         main()
-
-target_text = open('x.txt').read().lower()
-text = remove_punctuation(target_text)
-sentence = text.split()
+def word_mapping(f):
+def word_translation():
+sentence =
 print(sentence)
