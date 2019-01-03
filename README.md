@@ -10,9 +10,31 @@ Dans le cadre de ce projet, c'est un concordancier bilingue. Son utilité diffè
 Contenu :
 Le répertoire contient les fichiers suivants :
 -> Le script du concordancier en langage Python
--> Un rapport sur l'avancée et le déroulement du projet
--> Le présent fichier READ ME
+-> Le présent fichier READ ME soit 
+-> rapport sur l'avancée et le déroulement du projet
 -> Les notes prises lors du projet
+
+
+
+Rapport de projet de concordancier Python
+
+Introduction
+
+Intérêt du projet
+
+Création du depository
+
+Corps du projet 
+1. Déconstruction en étapes
+2. Premières tentatives avec python
+3. Finalisation du projet 
+4. Vérification du code propre
+
+Problème rencontrés
+
+Bilan sur l'apprentissage
+
+Conclusion
 
 
 
